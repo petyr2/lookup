@@ -12,7 +12,7 @@ Trying fig:admin
 
 We can write a small python script that would help us enumerate valid usernames:
 
-/home/petyr/user_enum.py
+
 
 
 
