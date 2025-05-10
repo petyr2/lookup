@@ -46,7 +46,7 @@ Let’s save that list to a file on our kali and try brute-forcing “think”
 ```bash
 hydra -l think -P usr_think.txt ssh://lookup.thm
 ```
-login using ssh
+login using ssh to access user think
 ```bash
 ssh think@lookup.thm   
 ```
