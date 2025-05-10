@@ -12,7 +12,7 @@ Trying fig:admin
 
 We can write a small python script that would help us enumerate valid usernames:
 
-user_enum.py
+USER_ENUM.PY is the python3 code that I used to enumerate the available users
 
 Using this scripts found  some users:
 
