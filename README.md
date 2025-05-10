@@ -18,6 +18,7 @@ We can write a small python script that would help us enumerate valid usernames:
 Using this scripts found  some users:
 
 jose
+
 admin
    
 Now lets try a brute force for user jose using hydra:
